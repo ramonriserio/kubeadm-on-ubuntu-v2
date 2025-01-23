@@ -2,7 +2,7 @@
 #!/bin/bash
 #
 # Após executar o script "1st-run-all-nodes.sh" (a ser executado em todos os nós, inclusive o master),
-# execute esse script somente no nó Master para congirar o Control Plane
+# execute esse script somente no nó Master para configurar o Control Plane
 
 # Execute esse script como root user
 
