@@ -41,6 +41,6 @@ sudo cp -i /etc/kubernetes/admin.conf "$HOME"/.kube/config
 sudo chown "$(id -u)":"$(id -g)" "$HOME"/.kube/config
 
 # O Kubeadm não configura nenhum plugin de rede. 
-#Você precisa instalar um plugin de rede de sua escolha para a rede de pods do Kubernetes e habilitar a política de rede.
+# Você precisa instalar um plugin de rede de sua escolha para a rede de pods do Kubernetes e habilitar a política de rede.
 # Usaremos o plugin de rede Calico para esta configuração.
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
