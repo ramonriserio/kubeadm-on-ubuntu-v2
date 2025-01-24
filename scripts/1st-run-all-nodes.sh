@@ -5,8 +5,8 @@
 
 # Execute esse script como root user
 
-# O próximo comando garante que os pipelines falhem se qualquer comando dentro deles falhar
-# e trata váriaveis não definidas como erros
+# O próximo comando garante que os pipelines falhem se qualquer comando dentro
+# deles falhar e trata váriaveis não definidas como erros
 set -euxo pipefail
 
 # Declaração de variáveis do setup
@@ -23,14 +23,14 @@ sudo swapoff -a
 # ------------------------------------------------
 # sudo apt-get update -y
 
-# Cria o arquivo .conf para que os módulos a seguir sejam carregados na inicialização
-# Esse módulos do kernel são necessários para o funcionamento da rede do Kubernetes
+# Cria arquivo .conf para carregar os módulos a seguir na inicialização
+# Módulos do kernel necessários para funcionamento da rede do Kubernetes
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
 overlay
 br_netfilter
 EOF
 
-# Os comandos a seguir carregam imediatamente os módulos overlay e br_netfilter do kernel
+# Comandos a seguir carregam imediatamente módulos overlay e br_netfilter do kernel
 sudo modprobe overlay
 sudo modprobe br_netfilter
 
@@ -47,7 +47,7 @@ sudo sysctl --system
 
 # TESTE IMPLEMENTAR SEM AS PRÓXIMAS DUAS LINHAS DE COMANDO
 # --------------------------------------------------------
-# sudo apt-get update -y
+sudo apt-get update -y
 # sudo apt-get install -y apt-transport-https ca-certificates curl gpg
 
 # Atualiza a lista de pacotes disponíveis e instala pacotes essenciais para 
