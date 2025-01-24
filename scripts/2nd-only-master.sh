@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #
 # Após executar o script "1st-run-all-nodes.sh" (a ser executado em todos os nós, inclusive o master),
@@ -8,6 +7,7 @@
 
 # O próximo comando garante que os pipelines falhem se qualquer comando dentro deles falhar
 # e trata váriaveis não definidas como erros
+
 set -euxo pipefail
 
 # Se você precisa de acesso público ao API server usando IP público dos servidores, mude PUBLIC_IP_ACCESS para "true".

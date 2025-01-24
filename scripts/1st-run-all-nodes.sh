@@ -68,7 +68,8 @@ echo "deb [signed-by=/etc/apt/keyrings/cri-o-apt-keyring.gpg] https://pkgs.k8s.i
     tee /etc/apt/sources.list.d/cri-o.list
 
 # Atualiza novamente a lista de pacotes disponíveis e instala o container
-# runtime do CRI-Osudo apt-get update -y
+# runtime do CRI-O
+sudo apt-get update -y
 sudo apt-get install -y cri-o
 
 # Recarrega o daemon systemd, habilita o serviço CRI-O para iniciar na 
