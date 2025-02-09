@@ -21,7 +21,7 @@ sudo swapoff -a
 (crontab -l 2>/dev/null; echo "@reboot /sbin/swapoff -a") | crontab - || true
 # TESTE IMPLEMENTAR SEM A PRÓXIMA LINHA DE COMANDO
 # ------------------------------------------------
-# sudo apt-get update -y
+sudo apt-get update -y
 
 # Cria arquivo .conf para carregar os módulos a seguir na inicialização
 # Módulos do kernel necessários para funcionamento da rede do Kubernetes
