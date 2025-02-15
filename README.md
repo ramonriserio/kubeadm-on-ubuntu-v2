@@ -34,11 +34,11 @@ Caso contrário, consulte a imagem a seguir e certifique-se de que todas as port
 
 Após a criação e configuração das 3 VMs (uma para nó master e duas para nós worker) de acordo com os requisitos definidos anteriormente (3. Pré-requisitos do kubeadm e 4. Requisitos de porta do kubeadm), vamos instalar o kubeadm nos 3 nós seguinte os seguintes passos:
 
-**PASSO 1:** Instalar cri-o, kubeadm, kubelet e kubectl em todos os nós (utilizando script)  
-**PASSO 2**: Inicializar kubeadm no Master p/ configurar Control Plane (com um comando)  
+**PASSO 1:** Instalar cri-o, kubeadm, kubelet e kubectl em todos os nós (**utilizando um script**)  
+**PASSO 2**: Inicializar kubeadm no Master p/ configurar Control Plane (**com um script**)  
 **PASSO 3**: Executar o comando para recriação do token  
-**PASSO 4**: Adicionar nós Worker ao Master do cluster (com um comando)  
-**PASSO 5**: Configurar o servidor de métricas do Kubernetes (com um comando)  
+**PASSO 4**: Adicionar nós Worker ao Master do cluster (**com um comando**)  
+**PASSO 5**: Configurar o servidor de métricas do Kubernetes (**com um comando**)  
 **PASSO 6**: Implantar uma aplicação Nginx como teste  
 ***
 ### PASSO 1: Instalar cri-o, kubeadm, kubelet e kubectl em todos os nós  
